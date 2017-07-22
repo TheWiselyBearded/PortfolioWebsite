@@ -1,0 +1,43 @@
+<div>
+
+  <app-header (notify)='onNotify($event)' (click)="animateNavBarDropDown()"></app-header>
+
+
+  <div *ngIf="showMore">
+
+    <!--TODO: Make the nav bar a drop down menu in the top right.-->
+    <div class="middleNav" [@navBarAnimation]="navBarState">
+      <app-nav (blogPost)='onBlogPost($event)'
+               (artworkPost)='onArtworkPost($event)'
+               (softwareProjectPost)="onSoftwareProjectPost($event)"
+               (resumePost)='onResumePost($event)'
+               (click)="animateHeaderSelection()"
+                ></app-nav>
+    </div>
+
+
+
+    <div *ngIf="softwareProjectsEnabled" [@softwareAnimation]="softwareState">
+      <!--Bind animation to this div.-->
+        <app-software></app-software>
+    </div>
+
+
+    <div *ngIf="blogPostEnabled" [@blogAnimation]="blogState">
+      <app-blog-posts></app-blog-posts>
+    </div>
+
+    <div *ngIf="artworkEnabled" [@artworkAnimation]="artworkState">
+      <app-artwork ></app-artwork>
+    </div>
+
+    <div *ngIf="resumeViewEnabled" [@resumeAnimation]="resumeState">
+      <app-resume ></app-resume>
+    </div>
+
+  </div>
+
+  <app-social-networks></app-social-networks>
+
+</div>
+

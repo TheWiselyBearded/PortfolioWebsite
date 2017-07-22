@@ -1,0 +1,44 @@
+<!--TODO: Include animations for bringing in VR and menu option as entering website?-->
+<!-- Header -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" align="center">
+      <!--<div class="col-md-6" style="position: relative; align-content: center; width: 20%; height: 100px;">-->
+      <img src="../assets/img/Alireza.jpg">
+      <!--<div class="circle-avatar" style="background-image:url('../assets/img/Alireza.jpg')"></div>-->
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-xs-12" id="leadInfo">
+      <h3>
+        Alireza Bahremand
+      </h3>
+      <h4>
+        Software Engineer
+      </h4>
+      <a *ngIf="!viewMore" href="https://alirezabahremand.neocities.org/" style="padding-bottom: 35px;" target="_blank">
+        <p>VR Site</p>
+      </a>
+      <!--<hr>-->
+
+      <!--TODO: Make the nav bar a drop down menu in the top right.-->
+      <!--<div class="middleNav"><app-nav></app-nav></div>-->
+
+      <!--NgIF with asterisk to remind angular this is a structural element manipulating the DOM -->
+      <div *ngIf="!viewMore"> <!-- If we haven't clicked show more, then 'viewMore' prop will be false. -->
+        <!--event binding for this-->
+        <a href="#" class="unlock" (click)="onClick()">2D Site</a>
+      </div>
+      <div *ngIf="viewMore"> <!-- If we haven't clicked show more, then 'viewMore' prop will be false. -->
+        <!--Want to set up event binding for this-->
+        <a href="#" class="unlock" (click)="onClick()">Hide</a>
+      </div>
+
+
+    </div>
+  </div>
+</div>  <!-- End of container -->
+
+
