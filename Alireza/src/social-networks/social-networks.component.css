@@ -4,6 +4,7 @@
   margin-bottom: 25px;
 }
 
+/*TODO: Download icons of social networks.*/
 .fa {
   padding: 15px;
   font-size: 22px;
@@ -38,6 +39,9 @@
 .fa-linkedin {
   background: #007bb5;
   color: white;
+  padding-left: auto;
+  padding-right: auto;
+  margin-bottom: 40%;
 }
 
 .fa-instagram {

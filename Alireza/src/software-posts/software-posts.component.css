@@ -1,8 +1,92 @@
+/*Software image apart of software project posts*/
 .softwareImage {
   width: 122%;
   height: 38%;
+  /*align-content: left;*/
 }
 
+/*TODO: Figure this shit out lol.*/
+/*.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }*/
+.carousel{
+  overflow:hidden;
+  width:100%;
+}
+.slides{
+  list-style:none;
+  position:relative;
+  width:500%; /* Number of panes * 100% */
+  overflow:hidden; /* Clear floats */
+  /* Slide effect Animations*/
+  -moz-animation:carousel 15s infinite;
+  -webkit-animation:carousel 15s infinite;
+  animation:carousel 15s infinite;
+}
+.slides > li{
+  position:relative;
+  float:left;
+  width: 20%; /* 100 / number of panes */
+}
+.carousel img{
+  /*display:block;*/
+  /*width:100%;*/
+  max-width:100%;
+}
+.carousel h2{
+  margin-bottom: 0;
+  font-size:1em;
+  padding:1.5em 0.5em 1.5em 0.5em;
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  text-align:center;
+  color:#fff;
+  background-color:rgba(0,0,0,0.75);
+  text-transform: uppercase;
+}
+
+@keyframes carousel{
+  0%    { left:0%; }
+  11%   { left:0%; }
+  12.5% { left:-110%; }
+  23.5% { left:-110%; }
+  25%   { left:-110%; }
+  37.5% { left:-200%; }
+  48.5% { left:-200%; }
+  50%   { left:-200%; }
+  61%   { left:-200%; }
+  62.5% { left:-110%; }
+  73.5% { left:-110%; }
+  75%   { left:-110%; }
+  86%   { left:-110%; }
+  87.5% { left:-110%; }
+  98.5% { left:0%; }
+  100%  { left:0%; }
+}
+
+
+
+/*Software project text description.*/
 .softwareProjectTextDescription {
   /*padding-left: 27%;*/
+  text-align: justify;
+  font-family: "Trebuchet MS", Arial, sans-serif;
 }
+
+/*First letter styling of software project description.*/
+.softwareProjectTextDescription:first-letter {
+  font-size: 180%;
+}
+
+/*Title of software projects.*/
+.softwareProjectTitle {
+  letter-spacing: 0.08em;
+}
+
+a:hover {
+  color: teal;
+}
+/*When user clicks a link*/
+/*a:visited {*/
+  /*color: brown;*/
+/*}*/

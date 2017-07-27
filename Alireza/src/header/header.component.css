@@ -1,9 +1,57 @@
-.imgJumbo {
-  margin-top: -10%;
-  width: 100%;
+/*Box div for vr icon.*/
+#vrIconBox {
+  /*padding-bottom: 35px;*/
+  margin-top: 6px;
+  margin-bottom: 8px;
 }
 
-img {
+/*VR icon img color change for hover.*/
+#vrIconBox img:hover {
+  background-color: lightblue;
+}
+
+
+/*Font awesome eyeball icon color.*/
+.fa-eye {
+  color: midnightblue;
+}
+
+/*Font awesome disable eye 2d icon*/
+.fa-eye-slash {
+  /*color: cadetblue;*/
+}
+
+/*Menu dissapear icon color.*/
+.fa-caret-square-o-up {
+  color: midnightblue;
+}
+
+/*Div for 2d icon*/
+#menuText {
+  color: midnightblue;
+}
+
+/*The box for the 2d menu icon for appearing*/
+#menuAppearIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #55ACEE;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+/*The actual 2d label for menu button.*/
+#menuAppearIcon p {
+  padding-top: 24%;
+  font-size: 17px;
+  letter-spacing: 0.22em;
+  padding-left: 17%;
+  padding-right: 15%;
+  text-decoration: #3b3c9b;
+}
+
+#headerMainImage {
   width: 240px;
   height: auto;
   border-radius: 50%;
@@ -11,8 +59,21 @@ img {
   margin-top: 2%;
 }
 
-h3  {
+
+
+#headLineName {
   color: darkblue;
+  letter-spacing: 0.2em;
+  text-indent: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Gill Sans", Arial, sans-serif;
+}
+
+#headlineTitle {
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  font-family: "Gill Sans", Arial, sans-serif;
 }
 
 #leadInfo {
@@ -28,32 +89,19 @@ h3  {
 }
 
 
-/*div.circle-avatar{*/
-  /*!* make it responsive *!*/
-  /*max-width: 100%;*/
-  /*width:100%;*/
-  /*height:auto;*/
-  /*display:block;*/
-  /*!* div height to be the same as width*!*/
-  /*padding-top:100%;*/
-
-
-  /*!* make it a circle *!*/
-  /*border-radius:50%;*/
-
-  /*!* Centering on image`s center*!*/
-  /*background-position-y: center;*/
-  /*background-position-x: center;*/
-  /*background-repeat: no-repeat;*/
-
-  /*!* it makes the clue thing, takes smaller dimension to fill div *!*/
-  /*background-size: cover;*/
-
-  /*!* it is optional, for making this div centered in parent*!*/
-  /*margin: 0 auto;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*right: 0;*/
-  /*bottom: 0;*/
+/*.disappear.ng-hide {*/
+  /*opacity: 0;*/
 /*}*/
 
+/*.disappear.ng-hide-remove,*/
+/*.disappear.ng-hide-add {*/
+  /*display: block !important;*/
+/*}*/
+
+/*.disappear.ng-hide-remove {*/
+  /*transition: all linear 1000ms;*/
+/*}*/
+
+/*.disappear.ng-hide-add {*/
+  /*transition: all linear 500ms;*/
+/*}*/

@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-md-12" align="center">
       <!--<div class="col-md-6" style="position: relative; align-content: center; width: 20%; height: 100px;">-->
-      <img src="../assets/img/Alireza.jpg">
+      <img id="headerMainImage" src="../assets/img/Alireza.jpg">
       <!--<div class="circle-avatar" style="background-image:url('../assets/img/Alireza.jpg')"></div>-->
     </div>
   </div>
@@ -12,28 +12,47 @@
 
   <div class="row">
     <div class="col-xs-12" id="leadInfo">
-      <h3>
+      <h3 id="headLineName">
         Alireza Bahremand
       </h3>
-      <h4>
+      <h4 id="headlineTitle">
         Software Engineer
       </h4>
-      <a *ngIf="!viewMore" href="https://alirezabahremand.neocities.org/" style="padding-bottom: 35px;" target="_blank">
-        <p>VR Site</p>
-      </a>
+      <div id="vrIconBox">
+        <a *ngIf="!viewMore" href="https://alirezabahremand.neocities.org/" target="_blank">
+          <!--<p>VR Site</p>-->
+          <img src="../assets/img/icons/VRIcon.png" height="32" width="61"/>
+        </a>
+      </div>
+
       <!--<hr>-->
 
       <!--TODO: Make the nav bar a drop down menu in the top right.-->
       <!--<div class="middleNav"><app-nav></app-nav></div>-->
 
       <!--NgIF with asterisk to remind angular this is a structural element manipulating the DOM -->
-      <div *ngIf="!viewMore"> <!-- If we haven't clicked show more, then 'viewMore' prop will be false. -->
-        <!--event binding for this-->
-        <a href="#" class="unlock" (click)="onClick()">2D Site</a>
+      <!-- If we haven't clicked show more, then 'viewMore' prop will be false. -->
+      <div *ngIf="!viewMore">
+      <!--<div [@2dIconAnimation]="viewMoreState">-->
+        <a href="#" (click)="onClick()">
+          <!--Want to create 2 eyes side by side.-->
+          <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+          <p id="menuText">2D</p>
+        </a>
       </div>
-      <div *ngIf="viewMore"> <!-- If we haven't clicked show more, then 'viewMore' prop will be false. -->
-        <!--Want to set up event binding for this-->
-        <a href="#" class="unlock" (click)="onClick()">Hide</a>
+
+      <!-- If we haven't clicked show more, then 'viewMore' prop will be false. -->
+      <div *ngIf="viewMore" id="2dGone">
+        <!--TODO: This needs to emit an event that user has pressed hide to trigger an animation for the navbar to dissapear.-->
+        <a href="#" (click)="onClick()">
+        <!--<span (click)="onClick()">-->
+          <!--<i class="fa fa-caret-square-o-up fa-2x" aria-hidden="true"></i>-->
+          <i class="fa fa-eye-slash fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-eye-slash fa-2x" aria-hidden="true"></i>
+          <!--Hide-->
+        <!--</span>-->
+        </a>
       </div>
 
 

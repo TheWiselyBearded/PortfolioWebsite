@@ -1,0 +1,35 @@
+/*Div container for blog title*/
+.blogTitleBlock {
+  align-content: left;
+  text-align: left;
+  border-right: 3px solid darkblue;
+  padding-left: 10%;
+  margin-top: -2%;
+  font-family: Arial, "Gill Sans", sans-serif;
+}
+
+/*Title of blog*/
+.blogTitle {
+  margin-right: 20%;
+  font-size: 55px;
+  text-decoration: double;
+  letter-spacing: 0.05em;
+}
+
+/*First letter styling of software project description.*/
+.blogText:first-letter {
+  font-size: 180%;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/*Div container for blog text.*/
+.blogTextBlock {
+  padding-right: 18%;
+  padding-left: 2%;
+}
+
+/*Text component for blog.*/
+.blogText {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  letter-spacing: 0.002em;
+}

@@ -57,6 +57,27 @@ import {
       ]))),
     ]),
     /**
+     * Animation for 2D Icon toggle.
+     */
+    trigger('2dIconAnimation', [
+      state('start2DIcon', style({
+        // transform: 'scale(0.4)',
+      })),
+      state('end2DIcon', style({
+        transform: 'scale(1)',
+      })),
+      // transition('start2DIcon => end2DIcon', animate('500ms ease-in', keyframes([
+      //   style({opacity: 0, transform: 'translateY(525%)', offset: 0}),
+      //   style({opacity: 0.4, transform: 'translateY(105%)', offset: .5}),
+      //   style({opacity: 1, transform: 'translateY(0)', offset: 1}),
+      // ]))),
+      transition('start2DIcon => end2DIcon', animate('500ms ease-out', keyframes([
+        style({opacity: 1, transform: 'translateY(0)', offset: 0}),
+        style({opacity: 0.5, transform: 'translateY(50%)', offset: .5}),
+        style({opacity: 0, transform: 'translateY(105%)', offset: 1}),
+      ]))),
+    ]),
+    /**
      * Animation for blogToggle.
      */
     trigger('blogAnimation', [
@@ -122,7 +143,7 @@ import {
         style({opacity: 0, transform: 'scale(0)', offset: 1}),
       ]))),
     ]),
-  ]
+   ]
 })
 export class AppComponent {
   // title = 'app';

@@ -1,0 +1,17 @@
+#resumeDiv {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  margin-left: 17%;
+  width: 65%;
+  /*border-bottom: 1px solid #000;*/
+}
+
+#resumeTitle {
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 2%;
+}

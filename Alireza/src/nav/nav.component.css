@@ -2,7 +2,31 @@
   position: relative;
   vertical-align: middle;
   margin-top: 15px;
-  margin-left: 37%;
+  width: 70%;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*text-align: center;*/
+}
+
+.nav-pills {
+  margin: 0 auto;
+  padding: 0;
+  width: 400px;
+}
+
+/*ul:hover will target the navbar ul selector each individual tab*/
+ul:hover {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-right: 1px ridge #000;
+  border-left: 1px ridge #000;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  background-color: rgba(154,217,249,0.33)
+}
+
+/*Each individual tab of navbar.*/
+li:hover {
 }
 
 

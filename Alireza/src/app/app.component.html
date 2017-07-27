@@ -1,4 +1,4 @@
-<div>
+<div class="container col-md-12">
 
   <app-header (notify)='onNotify($event)' (click)="animateNavBarDropDown()"></app-header>
 
@@ -6,7 +6,7 @@
   <div *ngIf="showMore">
 
     <!--TODO: Make the nav bar a drop down menu in the top right.-->
-    <div class="middleNav" [@navBarAnimation]="navBarState">
+    <div [@navBarAnimation]="navBarState">
       <app-nav (blogPost)='onBlogPost($event)'
                (artworkPost)='onArtworkPost($event)'
                (softwareProjectPost)="onSoftwareProjectPost($event)"
